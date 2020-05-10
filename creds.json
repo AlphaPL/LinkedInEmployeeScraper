@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "bariatriapp",
+  "private_key_id": "22c6c94c393cf14eab8c892712471a91225ca961",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCMsKF4DBqMCGF1\n6BL5pYsyxQR0rpCUPCPV329ZUjgAaRJMWoKGH9PUyyaSWf0IzDsfAL3MdRSH+BNe\n+4ZcGhXmEaP4XnBb91LgRWQJe7K2skq6YZRxsqERsLgOMfVWI7lGrwffHN69Cqn8\n/CSZ932z1o+hqzY1stJaPFjsdrTulZ/vnXzWTM0C2VHyexMr3w3HEQSvyxR45Btr\nt/mLQuxSJJj0l02iTYVS978D4ZnSMazjmIGDVVh+gm3aavu087HaUTWmSe48L07Q\nH62gW6HYslL2tMZ6KOVntDZ719F107HmPkLD9TACfoCzgz0CD4OZj9nXTE/egBuO\n6Iw6tZQVAgMBAAECggEAGBhIDx9DjKgCyQat+UN4y4EiejlLWZfTK1XQ5CNIpAla\nsOjvYbkhtlf0iywOQet4VJ7z4ohKs96wspuxLyToizaKNoc2Bwocj3xS3azptpBi\na/k6Sx6kpzr0yrmTouULXier2XJAU2/4HPOx8QyJ4rrkbnO8HQY7MGkVcaoC4rlM\nYYRgH7p3QR8ZtJfG195ZgFj3uZwq/EQHl/NKKnKdaL7B9QetqibT+L2bY5hjcdJ7\n+xzyo4eVqinYmCjGw2lgYxKSoi1DmyuVbtkdERn2Z/CFAkai1RO7mSrrAMA3PrsF\n9ONd34jGoH1NplIPPJ+u65r1BVr7SLbUoVVggHayAQKBgQC94puqfibhJp3c85mn\nqExhtGV5dkF3zAxAkavCsVWZ3KrW0z6Lps/ADESPkeNfy8Ju3mG7ue+h8Zi7cHcw\nN5I2rfRVOYlbolTSi4uYyP6rTJZMOpvZerWc2mTLU98W2eSa+pGDuG6NHmOYgsmu\n4zUaSBrOGeBGvnw9SzMLDU5vJQKBgQC9rQM+dAGiPp54vkD0MG6x8Qo9+5e9U6PD\nlngvmq9JcQBbUMAnkwSn6LGhpER/fotkZJ9ggdHjZbGd7pLuEBSThbQl1gmcFE6F\nJzwLHrrDDGhd48q2uIDz9VmKo5w3/MWQFIRbt59PqFlaVNwY0yeDhK/32A/gKxjp\nktqA3Ja2MQKBgCXKWra0wqIeoF5f8N2oJgNv9p4UxfTEnE+hbjCiQGoNu8ZjZlg+\ny6vqBR8Zpsni8IBGK+dDmwh836u2N1JWTPgq6KypdcfR59W7Rf4TSnPnGyZyp5/B\nxzE/Wb4JpCWVGeUqJxmy8/WL7cBljyQKPgBMB2GrTrJlqK4+MBtr+4ctAoGAbOP+\nkMQYjARXBgpzT7zeT9mJf7wIiPCTe53OscWkDA2LnuDk79M/QQYdtCaSDH+hlqkN\ntmHRFTM0nO5x+6nPpkGEApS2P5yI13iGx/uETKW65Ov5XJzfqy6XkTgMXzgGU4jz\n05O/KgQECA/fq4DNlnt+alLoClGzo6RjPMdm3oECgYEAlDHsbZY6gtsSnQqy1kU8\nLTfYQepxKNP8q+7LkaaLtXgBt3Mf/Nb6XnWWhEzttoekCqPkqk4Z64NPh4fQ6Ctq\nargLpFEPEz0IhAb5AJ9tdhco/4L7VYM67qflIkgy1Zn21wnfqdNV/Mimuyf85ND9\ndwz6ej8ie8gXGEACvpib4tI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "spreadsheets@bariatriapp.iam.gserviceaccount.com",
+  "client_id": "102938913724035062439",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/spreadsheets%40bariatriapp.iam.gserviceaccount.com"
+}
