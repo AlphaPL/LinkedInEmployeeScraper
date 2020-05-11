@@ -34,7 +34,7 @@ def write_row(name, idx, new_row):
     sh.update_row(idx + 1, values= new_row)
     sh.sync()
 
-def read_in_sheet(name):
+def read_in_sheet(name, offset=0):
     import pygsheets
     import pandas as pd
     #authorization
@@ -43,10 +43,10 @@ def read_in_sheet(name):
     #open the google spreadsheet (where 'PY to Gsheet Test' is the name of my sheet)
     sh = gc.open(name).sheet1
     #select the first sheet
-    column_names = [i for i in sh.get_all_values()[0]]
+    column_names = [i for i in sh.get_all_values()[0 + offset]]
     values = []
     rows = []
-    for row in sh.get_all_values()[1:]:
+    for row in sh.get_all_values()[1 + offset:]:
         row = [i for i in row]
         row_value = {}
         for (x,y) in zip(column_names, row):
@@ -74,7 +74,7 @@ if __name__ == '__main__':
         config = json.load(config_file)
 
     keywords, a = read_in_sheet(config['Keywords'])
-    companies, companies_column_names = read_in_sheet(config['Companies'])
+    companies, companies_column_names = read_in_sheet(config['Companies'], 3)
     start  = time.time()
     output = args.output if args.output else "./"
     for idx_company, company in enumerate(companies):
@@ -89,7 +89,7 @@ if __name__ == '__main__':
                         with open("%s/%s.txt" % (output, keyword['KEYWORD']+company['NAME']), 'w') as f:
                             for name in scraper.employees:
                                 f.write("%s\n" % name)
-                    contacts, contacts_column_names = read_in_sheet(config['Contacts'])
+                    contacts, contacts_column_names = read_in_sheet(config['Contacts'], 8)
                     existing_contracts = len(contacts)
                     print("Inserting contacts with keyword " + keyword['KEYWORD'] + " from company " + company['NAME'])
                     with open("%s/%s.txt" % (output, keyword['KEYWORD']+company['NAME']), 'r') as f:
@@ -103,9 +103,9 @@ if __name__ == '__main__':
                             contact['LINKEDIN'] = line[1]
                             contact['COMPANY'] = company['NAME']
                             row = [contact.get(column_name, '') for column_name in contacts_column_names]
-                            write_row('Contacts', existing_contracts + idx + 1, row)
+                            write_row('Contacts', existing_contracts + idx + 1 + 8, row)
         company['TO SCRAPE'] = 'FALSE'
-        update_row('Companies', idx_company + 1, [company[key] if key in company else '' for key in companies_column_names])
+        update_row('Companies', idx_company + 1 + 3, [company[key] if key in company else '' for key in companies_column_names])
 
 
 
